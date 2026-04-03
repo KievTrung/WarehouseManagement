@@ -25,9 +25,7 @@ public class Application {
 	}
 
 	// run ui
-	SwingUtilities.invokeLater(() -> {
-	  MainForm mainForm = new MainForm();
-	});
+	SwingUtilities.invokeLater(MainForm::new);
 
   }
 }

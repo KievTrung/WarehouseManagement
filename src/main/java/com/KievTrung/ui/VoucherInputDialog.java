@@ -90,10 +90,9 @@ public class VoucherInputDialog extends JDialog {
 	});
 	comboBoxSupplier.setSelectedIndex(-1);
 	// set table
-	MainForm.loadTable(tableItem, col, null);
+	MainForm.loadTable(tableItem, col, null, ListSelectionModel.SINGLE_SELECTION);
 	// set jdatepicker
-	dateModel = new LocalDateModel();
-	dateModel.setValue(LocalDate.now());
+	dateModel = new LocalDateModel(LocalDate.now());
 	dateModel.setSelected(true);
 	JDatePicker jDatePicker = new JDatePicker(dateModel);
 	datePanel.add(jDatePicker, BorderLayout.CENTER);

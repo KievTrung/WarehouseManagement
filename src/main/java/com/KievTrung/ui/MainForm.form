@@ -234,9 +234,11 @@
                 <children>
                   <splitpane id="ff255">
                     <constraints>
-                      <tabbedpane title="Voucher"/>
+                      <tabbedpane title="Phiếu xuất"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <orientation value="0"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <scrollpane id="9bc4f">
@@ -269,7 +271,7 @@
                   </splitpane>
                   <scrollpane id="d575b">
                     <constraints>
-                      <tabbedpane title="Debt"/>
+                      <tabbedpane title="Nợ của khách hàng"/>
                     </constraints>
                     <properties/>
                     <border type="none"/>
@@ -280,19 +282,43 @@
                       </component>
                     </children>
                   </scrollpane>
-                  <scrollpane id="ea9e2">
+                  <splitpane id="f9ca9">
                     <constraints>
-                      <tabbedpane title="Collection"/>
+                      <tabbedpane title="Thanh toán"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <orientation value="0"/>
+                    </properties>
                     <border type="none"/>
                     <children>
-                      <component id="5f439" class="javax.swing.JTable" binding="tableCollection">
-                        <constraints/>
+                      <scrollpane id="ea9e2">
+                        <constraints>
+                          <splitpane position="left"/>
+                        </constraints>
                         <properties/>
-                      </component>
+                        <border type="none"/>
+                        <children>
+                          <component id="5f439" class="javax.swing.JTable" binding="tableCollection">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <scrollpane id="6128">
+                        <constraints>
+                          <splitpane position="right"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="6982b" class="javax.swing.JTable" binding="tableCollectionDetail">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
                     </children>
-                  </scrollpane>
+                  </splitpane>
                 </children>
               </tabbedpane>
               <grid id="2f232" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
