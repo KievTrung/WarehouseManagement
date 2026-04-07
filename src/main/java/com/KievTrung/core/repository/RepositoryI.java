@@ -4,6 +4,8 @@ import com.KievTrung.core.domain.Person;
 
 import java.util.List;
 
+// các domain repository sẽ implement generic interface này
+// nếu repository nào cần có thêm method thì sẽ extend interface này
 public interface RepositoryI<T> {
   void create(Person.Type type, T obj);
 

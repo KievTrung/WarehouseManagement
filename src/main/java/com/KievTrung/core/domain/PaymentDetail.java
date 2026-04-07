@@ -6,6 +6,8 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+
+// chi tiết thanh toán cho nhà cung cấp và khách hàng
 @Getter
 @Setter
 @NoArgsConstructor

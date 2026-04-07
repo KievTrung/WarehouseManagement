@@ -6,6 +6,7 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+// line phiếu
 @Getter
 @Setter
 @NoArgsConstructor

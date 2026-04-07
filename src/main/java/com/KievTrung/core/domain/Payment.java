@@ -11,6 +11,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+
+// khoản thanh toán cho nhà cung cấp và khoản thanh toán của khách hàng
 @Getter
 @Setter
 @NoArgsConstructor

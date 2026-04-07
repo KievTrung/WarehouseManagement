@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+// phiếu mua hàng của nhà cung cấp và phiếu bán hàng của khách hàng
 @Getter
 @Setter
 @NoArgsConstructor
